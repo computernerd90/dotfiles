@@ -1,0 +1,15 @@
+{
+  "name": "computernerd90-vim",
+  "version": "0.1.0",
+  "author": "computernerd90",
+  "summary": "My dotfiles for vim.",
+  "license": "Apache-2.0",
+  "source": "¯\\_(ツ)_/¯",
+  "project_page": "¯\\_(ツ)_/¯",
+  "issues_url": "¯\\_(ツ)_/¯",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
