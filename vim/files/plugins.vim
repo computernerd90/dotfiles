@@ -15,6 +15,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mbbill/undotree'
+Plugin 'chriskempson/base16-vim'
 
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -34,4 +36,5 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Post plugin processing here
+colorscheme base16-solarized-dark
 let g:airline_theme='base16_solarized'

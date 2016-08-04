@@ -37,8 +37,6 @@ set lazyredraw             " Only redraw when necessary.
 " Theme settings
 syntax enable
 set background=dark
-let g:solarized_termtrans=1
-colorscheme solarized
 
 " Split window settings
 set splitbelow             " Open new windows below the current window.

@@ -45,22 +45,28 @@
 class vim {
     file { '/home/james/.vimrc':
         ensure => file,
-        source => 'puppet:///modules/vim/vimrc'
+        source => 'puppet:///modules/vim/vimrc',
+    }
+
+    file { ['/home/james/.vim/', '/home/james/.vim/files/',
+        '/home/james/.vim/colors/', '/home/james/.vim/files/backup/',
+        '/home/james/.vim/files/swap/', '/home/james/.vim/files/undo/']:
+        ensure => directory,
     }
 
     file { '/home/james/.vim/rc/plugins.vim':
         ensure => file,
-        source => 'puppet:///modules/vim/plugins.vim'
+        source => 'puppet:///modules/vim/plugins.vim',
     }
 
     file { '/home/james/.vim/rc/general.vim':
         ensure => file,
-        source => 'puppet:///modules/vim/general.vim'
+        source => 'puppet:///modules/vim/general.vim',
     }
 
     vcsrepo { '/home/james/.vim/bundle/Vundle.vim':
         ensure => present,
         provider => git,
-        source => 'https://github.com/VundleVim/Vundle.vim.git'
+        source => 'https://github.com/VundleVim/Vundle.vim.git',
     }
 }
