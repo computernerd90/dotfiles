@@ -45,6 +45,17 @@
 class tmux {
     file { '/home/james/.tmux.conf':
         ensure => file,
-        source => 'puppet:///modules/tmux/tmux.conf'
+        source => 'puppet:///modules/tmux/tmux.conf',
+    }
+    
+    file { ['/home/james/.tmux/', '/home/james/.tmux/plugins/']:
+        ensure => directory,
+    }
+
+    vcsrepo { '/home/james/.tmux/plugins/tpm':
+        ensure => present,
+        provider => git,
+        source => 'https://github.com/tmux-plugins/tpm',
+        require => File['/home/james/.tmux/plugins/'],
     }
 }
