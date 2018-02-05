@@ -1,0 +1,10 @@
+/vim/.vim/bundle/*
+!/vim/.vim/bundle/Vundle.vim
+/vim/.vim/files/backup/*
+!/vim/.vim/files/backup/.gitkeep
+/vim/.vim/files/swap/*
+!/vim/.vim/files/swap/.gitkeep
+/vim/.vim/files/undo/*
+!/vim/.vim/files/undo/.gitkeep
+/vim/.vim/colors/*
+!/vim/.vim/colors/.gitkeep
